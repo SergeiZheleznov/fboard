@@ -1,0 +1,31 @@
+{
+  "name": "fboard",
+  "version": "0.0.1",
+  "description": "",
+  "engines" : { 
+    "pnpm" : ">=6.30.0",
+    "node" : ">=16.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeiZheleznov/fboard.git"
+  },
+  "author": "Sergei Zheleznov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergeiZheleznov/fboard/issues"
+  },
+  "homepage": "https://github.com/SergeiZheleznov/fboard#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0"
+  }
+}
