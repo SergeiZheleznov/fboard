@@ -4,8 +4,8 @@
 </script>
 
 <div style={`width: ${width}%`} class={`h-full flex items-center`}>
-	<div style="width: 4%;" class="h-full bg-stone-700" />
 	<div class="grow h-6 flex items-center justify-center overflow-hidden">
-		<div class="rounded-full bg-stone-800 h-6 w-6 border-1 border-stone-700 flex items-center justify-center text-sm font-bold text-white">{idx}</div>
+		<div class="rounded-full bg-black opacity-70 h-6 w-6 border-1 border-stone-700 flex items-center justify-center text-sm font-bold text-white">{idx}</div>
 	</div>
+	<div class="h-full w-1" />
 </div>
