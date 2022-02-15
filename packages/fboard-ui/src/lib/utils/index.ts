@@ -1,4 +1,4 @@
-import type { IFret } from "$lib";
+import type { IFret } from "../";
 
 export const calculateFretWidths = (frets: IFret[]): IFret[] => {
   let lengthRest = 100;

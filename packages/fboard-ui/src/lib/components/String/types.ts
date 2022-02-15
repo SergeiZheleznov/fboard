@@ -1,5 +1,5 @@
 export type FretStatus = 'default' | 'active' | 'disabled';   
-export type StringThikness = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type StringId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
 export interface IFret {
   idx: number;
@@ -10,6 +10,6 @@ export interface IFret {
 }
 
 export interface IString {
-  thikness: StringThikness,
+  thikness: StringId,
   frets: IFret[]
 }

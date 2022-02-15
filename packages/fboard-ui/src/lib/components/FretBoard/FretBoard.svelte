@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { IFret } from '$lib';
-	import { calculateFretWidths } from '$lib/utils';
+	import type { IFret } from '../';
+	import { calculateFretWidths } from '../../utils';
 	import { onMount } from 'svelte';
 	export let fretCount = 24;
 
@@ -34,7 +34,7 @@
 		<div style={`width: ${fret.width}%`} class="flex h-full">
 			<div class="grow flex items-center justify-center">
 				{#if [5, 7, 9, 12, 15, 17, 19, 21].includes(fret.idx)}
-					<div class="h-3 w-3 rounded-full bg-white" />
+					<div class="h-5 w-5 rounded-full bg-stone-300" />
 				{/if}
 			</div>
 			<div class="w-1 bg-stone-500" />
