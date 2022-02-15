@@ -1,13 +1,12 @@
 <script lang="ts">
+	import { calculateFretWidths } from '$lib/utils';
+
 	import { css, tw } from 'twind';
 	import Fret from './Fret.svelte';
+	import type { IFret, StringThikness } from './types';
 
-	type StringThikness = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-
-	export let fretCount = 24;
+	export let frets: IFret[] = [];
 	export let thikness: StringThikness = 3;
-
-	let frets = [];
 
 	const calcHeight = (thikness: StringThikness) => {
 		switch (thikness) {
@@ -37,31 +36,15 @@
 	);
 
 	$: {
-		let lengthRest = 100;
-		const fretsLengths = [];
-		for (let idx = 0; idx < fretCount; idx++) {
-			const lng = lengthRest / 17.817;
-			lengthRest = lengthRest - lng;
-			fretsLengths[idx] = lng;
-		}
-		const minLength = lengthRest / fretCount;
-		frets = fretsLengths.map((l) => {
-			return parseFloat((l + minLength).toFixed(1));
-		});
-
-		let total = 0;
-		frets.forEach((element) => {
-			total = total + element;
-		});
-		console.log({ total });
+		frets = calculateFretWidths(frets);
 	}
 </script>
 
 <div class="h-12 w-full relative flex items-center">
 	<div class={`w-full dark:(bg-stone-700) ${heightCss}`} />
 	<div class="absolute h-12 w-full top-0 left-0 flex">
-		{#each frets as fretLenght, idx}
-			<Fret width={fretLenght} idx={idx + 1} />
+		{#each frets as fret}
+			<Fret width={fret.width} idx={fret.idx} />
 		{/each}
 	</div>
 </div>
