@@ -19,10 +19,10 @@
 		"svelte-preprocess": "^4.9.4",
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3",
-    "@twind/preset-autoprefix": "1.0.0-next.35",
-    "@twind/preset-tailwind": "1.0.0-next.35",
-    "@twind/with-sveltekit": "1.0.0-next.35",
-		"twind": "1.0.0-next.35",
+    "@twind/preset-autoprefix": "next",
+    "@twind/preset-tailwind": "next",
+    "@twind/with-sveltekit": "next",
+		"twind": "next",
 		"svelte2tsx": "^0.5.3"
 	},
 	"type": "module"
