@@ -48,10 +48,10 @@ importers:
     devDependencies:
       '@fboard-svelte/ui': link:../fboard-ui
       '@sveltejs/adapter-static': 1.0.0-next.35
-      '@sveltejs/kit': 1.0.0-next.368_svelte@3.46.4+vite@2.9.14
+      '@sveltejs/kit': 1.0.0-next.369_svelte@3.46.4+vite@2.9.14
       '@twind/preset-autoprefix': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
       '@twind/preset-tailwind': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
-      '@twind/with-sveltekit': 1.0.0-next.38_2260396fca883cd901c4e567bd9d4308
+      '@twind/with-sveltekit': 1.0.0-next.38_053c5509d99975a002ace36fb68960b4
       '@typescript-eslint/eslint-plugin': 5.11.0_3bf83de4bfb4bafe384c8467b43d3174
       '@typescript-eslint/parser': 5.11.0_eslint@7.32.0+typescript@4.5.5
       eslint: 7.32.0
@@ -84,10 +84,10 @@ importers:
       vite: ^2.9.14
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.55
-      '@sveltejs/kit': 1.0.0-next.368_svelte@3.46.4+vite@2.9.14
+      '@sveltejs/kit': 1.0.0-next.369_svelte@3.46.4+vite@2.9.14
       '@twind/preset-autoprefix': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
       '@twind/preset-tailwind': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
-      '@twind/with-sveltekit': 1.0.0-next.38_2260396fca883cd901c4e567bd9d4308
+      '@twind/with-sveltekit': 1.0.0-next.38_053c5509d99975a002ace36fb68960b4
       svelte: 3.46.4
       svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.3_svelte@3.46.4+typescript@4.5.5
@@ -245,8 +245,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.368_svelte@3.46.4+vite@2.9.14:
-    resolution: {integrity: sha512-0+JrQebSLbDrc7qPa4HsdG1v1+95ftHJhZtJD/VRifVoyUjURnWL4TrNcfnqNsgtacFWw+rO6obBr1PWc6Mlig==}
+  /@sveltejs/kit/1.0.0-next.369_svelte@3.46.4+vite@2.9.14:
+    resolution: {integrity: sha512-7kSOz6RIehSgV+HgrkV7m9tFkA5Dey/j0sw7vXtSdgcKUCbEwG84Mbk0vH9C2FTLL/9mlEGvxS5AqQ6m/VSv8Q==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
@@ -482,7 +482,7 @@ packages:
       typescript: 4.5.5
     dev: true
 
-  /@twind/with-sveltekit/1.0.0-next.38_2260396fca883cd901c4e567bd9d4308:
+  /@twind/with-sveltekit/1.0.0-next.38_053c5509d99975a002ace36fb68960b4:
     resolution: {integrity: sha512-zd+QDlMeIVqeAtx2Pp4R4IFWwiga+Ba9ZLr1RovBXAaaWT4qLr+oXdp0JMdAS0UX+/lwuHAe+bDW3RPAsGciGQ==}
     engines: {node: '>=12.4'}
     peerDependencies:
@@ -493,7 +493,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@sveltejs/kit': 1.0.0-next.368_svelte@3.46.4+vite@2.9.14
+      '@sveltejs/kit': 1.0.0-next.369_svelte@3.46.4+vite@2.9.14
       '@swc/helpers': 0.3.3
       twind: 1.0.0-next.38_typescript@4.5.5
       typescript: 4.5.5
