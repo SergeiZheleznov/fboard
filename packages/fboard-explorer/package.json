@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "build": "vite build",
+    "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@fboard-svelte/ui": "workspace:*",
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
@@ -26,7 +26,11 @@
     "svelte-preprocess": "^4.9.4",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3",
-		"vite": "^2.9.14"
+		"vite": "^2.9.14",
+    "@twind/preset-autoprefix": "next",
+    "@twind/preset-tailwind": "next",
+    "@twind/with-sveltekit": "next",
+    "twind": "next"
   },
   "type": "module",
   "dependencies": {

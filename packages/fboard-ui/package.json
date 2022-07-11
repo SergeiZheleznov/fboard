@@ -20,7 +20,7 @@
     "@twind/preset-tailwind": "next",
     "@twind/with-sveltekit": "next",
 		"twind": "next",
-		"svelte2tsx": "^0.5.3",
+		"svelte2tsx": "^0.5.11",
 		"vite": "^2.9.14"
 	},
 	"type": "module",

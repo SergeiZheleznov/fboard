@@ -23,9 +23,12 @@ importers:
   packages/fboard-explorer:
     specifiers:
       '@fboard-svelte/ui': workspace:*
-      '@sveltejs/adapter-auto': next
+      '@sveltejs/adapter-static': next
       '@sveltejs/kit': next
       '@tonaljs/tonal': ^4.6.5
+      '@twind/preset-autoprefix': next
+      '@twind/preset-tailwind': next
+      '@twind/with-sveltekit': next
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^7.32.0
@@ -37,14 +40,18 @@ importers:
       svelte-check: ^2.2.6
       svelte-preprocess: ^4.9.4
       tslib: ^2.3.1
+      twind: next
       typescript: ^4.4.3
       vite: ^2.9.14
     dependencies:
       '@tonaljs/tonal': 4.6.5
     devDependencies:
       '@fboard-svelte/ui': link:../fboard-ui
-      '@sveltejs/adapter-auto': 1.0.0-next.55
+      '@sveltejs/adapter-static': 1.0.0-next.35
       '@sveltejs/kit': 1.0.0-next.368_svelte@3.46.4+vite@2.9.14
+      '@twind/preset-autoprefix': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
+      '@twind/preset-tailwind': 1.0.0-next.38_775373a7881674018c88b91d08dc88e9
+      '@twind/with-sveltekit': 1.0.0-next.38_2260396fca883cd901c4e567bd9d4308
       '@typescript-eslint/eslint-plugin': 5.11.0_3bf83de4bfb4bafe384c8467b43d3174
       '@typescript-eslint/parser': 5.11.0_eslint@7.32.0+typescript@4.5.5
       eslint: 7.32.0
@@ -56,6 +63,7 @@ importers:
       svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.3_svelte@3.46.4+typescript@4.5.5
       tslib: 2.3.1
+      twind: 1.0.0-next.38_typescript@4.5.5
       typescript: 4.5.5
       vite: 2.9.14
 
@@ -69,7 +77,7 @@ importers:
       svelte: ^3.44.0
       svelte-check: ^2.2.6
       svelte-preprocess: ^4.9.4
-      svelte2tsx: ^0.5.3
+      svelte2tsx: ^0.5.11
       tslib: ^2.3.1
       twind: next
       typescript: ^4.4.3
@@ -83,7 +91,7 @@ importers:
       svelte: 3.46.4
       svelte-check: 2.4.3_svelte@3.46.4
       svelte-preprocess: 4.10.3_svelte@3.46.4+typescript@4.5.5
-      svelte2tsx: 0.5.3_svelte@3.46.4+typescript@4.5.5
+      svelte2tsx: 0.5.11_svelte@3.46.4+typescript@4.5.5
       tslib: 2.3.1
       twind: 1.0.0-next.38_typescript@4.5.5
       typescript: 4.5.5
@@ -218,6 +226,12 @@ packages:
       '@iarna/toml': 2.2.5
       esbuild: 0.14.49
       set-cookie-parser: 2.5.0
+      tiny-glob: 0.2.9
+    dev: true
+
+  /@sveltejs/adapter-static/1.0.0-next.35:
+    resolution: {integrity: sha512-iIg5nCMJF2/s/Y7zmy9pzp+U3YDBL6OQKmwfJm2H3Afde/XlhOuNlSO6K//hxmLmvrd7Oh6Kb0MLhwVKp0cuUA==}
+    dependencies:
       tiny-glob: 0.2.9
     dev: true
 
@@ -1007,7 +1021,7 @@ packages:
     dev: true
 
   /dedent-js/1.0.1:
-    resolution: {integrity: sha1-vuX7fJ5yfYXf+iRZDRDsGrElUwU=}
+    resolution: {integrity: sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==}
     dev: true
 
   /deep-is/0.1.4:
@@ -2366,8 +2380,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /svelte2tsx/0.5.3_svelte@3.46.4+typescript@4.5.5:
-    resolution: {integrity: sha512-MDt3Qls3JmLYdYXxM45ehGAw+dflUh8raswXAu6Xtdg0omJQrbQgqO0Z89jKvqDuPZpNYL3aJ7ZRy1jRW4x0rA==}
+  /svelte2tsx/0.5.11_svelte@3.46.4+typescript@4.5.5:
+    resolution: {integrity: sha512-Is95G1wqNvEUJZ9DITRS2zfMwVJRZztMduPs1vJJ0cm65WUg/avBl5vBXjHycQL/qmFpaqa3NG4qWnf7bCHPag==}
     peerDependencies:
       svelte: ^3.24
       typescript: ^4.1.2
