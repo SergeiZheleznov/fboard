@@ -26,14 +26,15 @@
     "svelte-preprocess": "^4.9.4",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3",
-		"vite": "^2.9.14",
-    "@twind/preset-autoprefix": "next",
-    "@twind/preset-tailwind": "next",
-    "@twind/with-sveltekit": "next",
-    "twind": "next"
+		"vite": "^2.9.14"
+
   },
   "type": "module",
   "dependencies": {
-    "@tonaljs/tonal": "^4.6.5"
+    "@tonaljs/tonal": "^4.6.5",
+    "@twind/preset-autoprefix": "next",
+    "@twind/preset-tailwind": "next",
+    "@twind/with-sveltekit": "next",
+		"twind": "next"
   }
 }
